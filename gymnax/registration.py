@@ -9,6 +9,7 @@ from gymnax.environments.bsuite import mnist
 from gymnax.environments.bsuite import umbrella_chain
 from gymnax.environments.classic_control import acrobot
 from gymnax.environments.classic_control import cartpole
+from gymnax.environments.classic_control import po_cartpole
 from gymnax.environments.classic_control import continuous_mountain_car
 from gymnax.environments.classic_control import mountain_car
 from gymnax.environments.classic_control import pendulum
@@ -47,6 +48,8 @@ def make(env_id: str, **env_kwargs):
     # 1. Classic OpenAI Control Tasks
     if env_id == "Pendulum-v1":
         env = pendulum.Pendulum(**env_kwargs)
+    elif env_id == "POCartPole-v1":
+        env = po_cartpole.CartPole(**env_kwargs)
     elif env_id == "CartPole-v1":
         env = cartpole.CartPole(**env_kwargs)
     elif env_id == "MountainCar-v0":
