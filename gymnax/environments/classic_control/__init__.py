@@ -10,7 +10,7 @@ from gymnax.environments.classic_control import pendulum
 
 Acrobot = acrobot.Acrobot
 CartPole = cartpole.CartPole
-POCartPOle = po_cartpole.POCartPole
+POCartPole = po_cartpole.POCartPole
 ContinuousMountainCar = continuous_mountain_car.ContinuousMountainCar
 MountainCar = mountain_car.MountainCar
 Pendulum = pendulum.Pendulum
