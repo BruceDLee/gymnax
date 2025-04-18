@@ -49,7 +49,7 @@ def make(env_id: str, **env_kwargs):
     if env_id == "Pendulum-v1":
         env = pendulum.Pendulum(**env_kwargs)
     elif env_id == "POCartPole-v1":
-        env = po_cartpole.CartPole(**env_kwargs)
+        env = po_cartpole.POCartPole(**env_kwargs)
     elif env_id == "CartPole-v1":
         env = cartpole.CartPole(**env_kwargs)
     elif env_id == "MountainCar-v0":
