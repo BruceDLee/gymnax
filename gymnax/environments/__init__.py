@@ -16,6 +16,7 @@ SimpleBandit = bsuite.SimpleBandit
 UmbrellaChain = bsuite.UmbrellaChain
 Acrobot = classic_control.Acrobot
 CartPole = classic_control.CartPole
+POCartPole = classic_control.POCartPole
 ContinuousMountainCar = classic_control.ContinuousMountainCar
 MountainCar = classic_control.MountainCar
 Pendulum = classic_control.Pendulum
@@ -41,6 +42,7 @@ __all__ = [
     "EnvState",
     "Pendulum",
     "CartPole",
+    "POCartPole",
     "MountainCar",
     "ContinuousMountainCar",
     "Acrobot",
